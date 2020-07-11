@@ -1,0 +1,333 @@
+body{
+	background-color:#FF00FF;;
+	font-family:" Helvetica" sans-serif;
+	color:purple;
+}
+
+h1{
+	color: orange;
+	font-family: "Times New Roman" sans-serif;
+}
+
+h2{
+	color: red;
+	font-family: "Times Roman"sans-serif;
+}
+
+li{
+	color:white;}
+
+	nav ul{
+		background-color: red; 
+		border-style: solid;
+		border-color: MwdiumVioletRed;
+		border-width: 2px;
+		padding:0.5em;
+		border-radius: 10px;
+		display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+}
+nav ul li {
+	    text-align: center;
+		list-style-type: none;
+		margin-right: 0.5em;
+		margin-left: 0.5em;
+		color:PapayaWhip;
+	}
+
+	nav ul li a{
+		text-decoration: none;
+		color: yellow;
+		}
+	nav ul li a:hover{
+	animation-name: rainbowGlow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+
+	}
+
+	/*****************/
+for  screens bigger than 1000 pixels,
+/***********************/
+
+@media all and (min-width: 1000px){
+	nav ul{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+/*****************/
+for  screens bigger than 1300 pixels,
+/***********************/
+@media all and (min-width: 1600px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+
+/***************/
+this styling is for  the table
+/*******************/
+	table, th, td{
+
+		border: 1px solid black;
+        border-collapse: collapse;
+	}
+
+	tr {
+  background-color: PaleTurquoise;
+      }
+
+th, td {
+  vertical-align: top;
+  padding: 5px;
+  text-align: left;
+}
+
+th {
+  color: red;
+}
+td {
+  color: purple;
+}
+
+.topDivider {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #F5FFFA;
+  padding-bottom: 10px;
+}
+
+.stylishbox {
+  background-color: #87CEFA;
+  color: #A52A2A;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #F5FFFA;
+  border-radius: 10px;
+}
+
+.someSpacing {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.smallPicture{
+	width: 200px;
+}
+
+#mycooltext{
+	color: #003366;
+	    border: 4px ridge #ccffff;
+	    padding: 15px;
+	    text-align: center;
+	    animation-name: rainbowGlow;
+	    animation-duration: 5s;
+	    animation-iteration-count: 5;
+
+}
+	#frontPage {
+	 
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, lime 14.28%, cyan 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 600vw 600vw;
+    animation: slide 10s infinite linear backwards;
+}
+
+#robotPicture{
+	width:100px;
+	border-radius: 100%;
+	}
+#robotPicture:hover{
+	animation-name: Rollover;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+@keyframes Rollover{
+	0%{
+		transform: rotate(0deg);
+   	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+@keyframes rainbowGlow{
+	0%{
+		color:#ffd700;
+	}
+	25%{
+		color: #F5FFFA;
+	}
+	50%{
+		color:#663399;
+	}
+	75%{
+		color:;
+	}
+	100%{
+		color:#ffd700;
+	}
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 600vw;
+    }
+}
+
+img {
+ border: 2px solid White;
+}
+img:hover {
+ border: 2px dashed Navy;
+}
+
+.niceLinks {
+ text-decoration: none;
+ color: #FFFAF0;
+}
+.niceLinks:hover {
+ color: #00FF7F;
+ animation-name: rainbowGlow;
+ animation-duration: 5s;
+animation-iteration-count: 5;
+
+}
+
+.tinyPicture {
+    height: 60px;
+    border-radius: 10px;
+}
+.tinyPicture:hover{
+	animation-name: Rollover;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+.card {
+    border: 2px solid #F0FFFF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: "Trebuchet MS", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card:hover {
+    border-color: #1E90FF;}
+
+.cardLink{
+	text-decoration: none;
+	font-family: inherit;
+
+}
+.classContainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px;
+}
+#Page{
+	background-color:  repeating-linear-gradient;
+   animation-name: bk;
+   animation-duration:5s;
+   animation-iteration-count: :infinite;
+}
+
+@keyframes bk{
+	from{background-color: red;}
+	to {
+		background-color: blue;
+	}
+}
+
+figure{
+	  margin-top: 0px;
+	  margin-left: 0px;
+	  margin-right: 0px;
+	  margin-bottom: 0px;
+}
+
+.sideNoteStyle {
+  border: dotted 1px purple;
+  background-color: #c1ebec;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+.specialText {
+    color: #FF4500;
+    font-size: larger;
+
+}
+
+.attPageLayoutGrid {
+    display: grid;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 1em;
+}
+
+.attPageLayoutGrid{
+	display: grid;
+	grid-column-gap: 0.5em;
+	grid-row-gap: 1em;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	"agArticle agArticle"
+	"agAside1 agASide2"
+	}
+	.attPageLayoutGrid1{
+	display: grid;
+	grid-column-gap: 0.5em;
+	grid-row-gap: 1em;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	"agArticle agAside1"
+	"agArticle agASide2"
+	}
+	.attPageLayoutGrid2{
+	display: grid;
+	grid-column-gap: 0.5em;
+	grid-row-gap: 1em;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	"agArticle agAside1"
+	"agArticle agASide2"
+	"agArticle.";
+	}
+.attGridArticle{
+grid-area: agArticle;
+}
+
+.attGridAside1{
+grid-area:agAside1;
+}
+.attGridAside2{
+grid-area:agASide2;
+}
+
+@media all and (min-width: 1000px){
+	.attPageLayoutGrid{
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"agArticle agArticle"
+		"agAside1 agASide2";
+	}
+}
+
+@media all and (min-width:1600px){
+	.attPageLayoutGrid{
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"agArticle agAside1"
+		"agArticle agASide2"
+		"agArticle.";
+	}
+}
